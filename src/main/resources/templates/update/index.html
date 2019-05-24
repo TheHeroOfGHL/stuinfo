@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改信息</title>
+</head>
+<body>
+<align align="center">
+    <h1>修改学生信息</h1>
+    <form action="/update/do?spk=${student.spk}", method="POST">
+        姓名：<br>
+        <input type="text" name="sname" value="${student.sname}"><br>
+        学号：<br>
+        <input type="text" name="sid" value="${student.sid}" readonly="true"><br>
+        性别：<br>
+        <input type="text" name="ssex" value="${student.ssex}"><br>
+        年龄：<br>
+        <input type="text" name="sage" value="${student.sage}"><br>
+        入学时间：<br>
+        <input type="text" name="sdate" value="${student.sdate}" readonly="true"><br>
+        <br>
+        <input type="submit" value="提交">
+    </form>
+</align>
+</body>
+</html>
